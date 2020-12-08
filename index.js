@@ -2,7 +2,7 @@ var app = require('express')();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http, {
     cors: {
-        origin: "https://thrones-chess-play.herokuapp.com/",
+        origin: "https://thrones-chess-play.herokuapp.com",
         methods: ["GET", "POST"],
         credentials: true
     }
