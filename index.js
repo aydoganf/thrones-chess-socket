@@ -4,7 +4,7 @@ var io = require('socket.io')(http, {
     cors: {
         origin: "https://thrones-chess-play.herokuapp.com",
         methods: ["GET", "POST"],
-        credentials: true
+        credentials: true,
     }
 });
 const PORT = process.env.PORT || 5000;
